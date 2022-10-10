@@ -1,0 +1,21 @@
+.form_style{
+	border:solid 0px red;
+	margin:0px auto;
+	width:410px; 
+	height:155px;
+}
+
+.title{	
+	border:solid 0px blue;
+	width:400px; height:30px;   
+	
+	text-align:center; 
+	margin:2px 0px;
+}
+
+.content{
+	border:solid 0px pink;
+	width:400px;height:86px;
+	
+	margin:2px 0px;
+}

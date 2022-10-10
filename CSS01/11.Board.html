@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>스타일 시트 예제</title>
+	<style type="text/css">
+		body{	
+		 	margin-top:0px;     							 /* 객체 간격 : 윈도우와 body공간 (기본 2px정도의 margin값이 있음)*/
+		 	margin-left:0px;							     /*	div태그는 body입장에서 패딩 값인데 body패딩이 없음, div태그 입장에서 body margin */
+		 	margin-right:0px;
+		 	margin-bottom:0px;	
+		} 										  		
+		
+		div{
+			border:solid 1px red;
+			width:500px; 
+			height:60px;
+			
+			margin:10px 0px 0px 100px;    	 			 		/* body 간격 (top, right, bottom, left) */
+			text-align:right;     
+		}
+			
+		#hangul > label, #alphabet > span{	
+			border:solid 1px blue;	
+			display:block; 
+		    float:left; 
+			width:100px; 
+			height:30px; 
+			text-align:center;   
+			line-height: 30px;    		                        		
+		
+			margin:10px 0px 0px 0px;  
+			padding:9px 0px 9px 0px;    		  	 		  								    			                                               
+		 }
+	</style>
+</head>
+<body>
+	<div id="hangul">	
+		<label>가</label>
+		<label>나</label>
+		<label>다</label>
+	</div>
+	<br/><br/>
+	
+	<div id="alphabet">
+		<span>AA</span>
+		<span>BB</span>
+		<span>CC</span>
+	</div>
+</body>
+</html>

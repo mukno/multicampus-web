@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 예제입니다.</title>
+</head>
+<body>
+    <form action="#" method="post"> 		
+		<label>메시지</label> 				 
+		<input type="text" name="msg"/><br/>
+		
+		<input type="radio" name="gender" value="남자" checked/>
+		<label>남자</label><br/>
+		<input type="radio" name="gender" value="여자"/>
+		<label>여자</label><br/>
+		
+		<input type="submit" value="전송"/>
+		<input type="reset" value="취소"/>
+	</form>
+    <br/><br/>
+	
+	<form action="#" method="post">
+		<fieldset>
+			<legend>회원약관</legend>   
+			<textarea rows="10" cols="183" name="contacts"></textarea>
+		</fieldset>
+		<input type="button" value="전송"/>
+	</form>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input 예제입니다.</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse : collapse;
+        }
+    </style>
+</head>
+<body>
+    <table>
+		<caption><b>FORM(INPUT TAG)</b></caption>
+		<tr>
+			<td>TEXT TYPE</td>
+			<td><input type="text" name="id" value="아이디" size="15" maxlength="7"/></td> 
+		</tr>
+		
+		<tr>
+			<td>PASSWORD TYPE</td>
+			<td><input type="password" name="pw" maxlength="5" value="1234"/></td>
+		</tr>
+		
+		<tr>
+			<td>HIDDEN TYPE</td>
+			<td><input type="hidden" name="number" value="123" /></td>
+		</tr>
+		
+		<tr>
+			<td>RADO TYPE</td>
+			<td>
+				<input type="radio" name="gender" value="남자" checked/>남자
+				<input type="radio" name="gender" value="여자"/>여자
+			</td>
+		</tr>
+		
+		<tr>
+			<td>CHECKBOX TYPE</td>
+			<td>
+				<input type="checkbox" name="subject" value="java">JAVA
+				<input type="checkbox" name="subject" value="jsp">JSP
+				<input type="checkbox" name="subject" value="iphone" checked>IPHONE
+			</td>
+		</tr>
+
+		<tr>
+			<td>FILE TYPE</td>		 <!-- enctype="multipart/form-data -->
+			<td><input type="file" name="file"/></td>
+		</tr>
+		
+		<tr>
+			<td>BUTTON TYPE</td>
+			<td>
+				<input type="button" value="누르세요.">
+				<input type="submit"  value="전송합니다.">
+				<input type="reset"  value="취소합니다.">
+			</td>
+		</tr>
+	</table>
+	<br/><br/>
+
+    <input type="color"  name="abc"/>   
+	<input type="date" name="xyz"/>
+	
+	<table>
+		<caption><b>그외 태그들</b></caption>
+		<tr>
+			<td>SELECT</td>
+			<td>
+				<select name="fruit1">
+					<option value="apple">사과</option>
+					<option value="banana" selected>바나나</option>
+					<option value="pineapple">파인애플</option>
+				</select>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>SELECT</td>
+			<td>
+				<select name="fruit2" size="5" multiple> <!-- 아래쪽 -->
+					<option value="apple">사과</option>
+					<option value="banana">바나나</option>
+					<option value="pineapple">파인애플</option>
+					<option value="melon">메론</option>
+				</select>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>TEXT AREA</td>
+			<td>
+				<textarea rows="10" cols="100" name="contacts"></textarea>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

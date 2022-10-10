@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기본문법</title>
+    <script>
+        // 변수(variable)
+        var su=10;
+        var value=24.5;
+        var hap=su+value;
+        var str="자바스크립트";
+        window.document.write("<p>" + hap + "</p>");
+        document.write("<p>" + str + "</p>");
+        
+        // 조건문
+        if(su >20){
+            document.write("<h3> 20보다 큰 수 입니다. </h3>");
+            console.log("<h3>" + su + "</h3>");
+        }else if(su > 30){
+         document.write("<h3> 30보다 큰 수 입니다. </h3>");
+        }else{
+            document.write("<h3> 기타 등등입니다. </h3>");
+        }
+        
+        // 반복문
+        for(var i=0;i<10;i++){
+            document.write("반복문입니다. <br/>");
+        }
+    </script>
+</head>
+<body>
+    <pre>
+		1. HTML : 웹페이지를 제작하기 위한 도구, 통신규약상의 의미를 말한다
+        2. CSS  : HTML 표현한다
+		3. 자바 스크립트: 
+		         1) HTML 통제하고 유용하게 활용한다 
+		         2) 동적화(DOM, Document of Model) 시킬 수 있는 용도 사용한다
+		
+		4. 자바스크립트 구성 
+		   1) 자바스크립트 CORE : 기본 문법과 구조, 데이터 타입, 조건문, 반복문, 함수, 기본 라이브러리 등이 포함 
+		   2) 자바스크립트 BOM(Browser Object Model): 브라우저와 관련된 Window, Navigator, Location, History, Document, Screen 객체 
+		   3) 자바스크립트 DOM(Document Object Model): Element 제어, Style 제어, Attribute 제어, Event 제어
+	</pre> 
+</body>
+</html>
