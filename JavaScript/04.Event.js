@@ -5,12 +5,6 @@ function checkForm(createForm){
 		return false;
 	}
 	
-	if(createForm.irum.value.length < 6){
-		alert("이름을 정확히 입력하세요.");
-		createForm.irum.focus();
-		return false;
-	}
-	
 	if(createForm.siteUrl.value==""){
 		alert("이동할 사이트를 선택하세요.");
 		createForm.siteUrl.focus();
@@ -28,15 +22,11 @@ function checkForm(createForm){
 	}
 	
 	var count=0;
-	var str="";
 	for(var i=0;i<createForm.interest.length;i++){
 		if(createForm.interest[i].checked==true){
-			str+=createForm.interest[i].value+",";
 			count++;
 		}
-		// alert(str);
 	}
-	createForm.abc.value=str;
 	
 	if(count==0){
 		alert("관심사를 하나 이상 체크하세요.");

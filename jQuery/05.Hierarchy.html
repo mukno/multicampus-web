@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자식, 후손</title>
+    <style>
+        label{
+            font-size:20px;
+            background-color:#EEEEEE;
+            padding:10px;
+        }	
+    </style>
+    <script src="./jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("p label").css("backgroundColor", "red");           // 후손(자식포함)
+            $("p > label").css("backgroundColor", "yellow");      // 자식
+        })
+    </script>
+</head>
+<body>
+    <p>
+		<label>ONE</label>
+		<label>TWO</label>
+		<span>
+			<label>THREE</label>
+		</span>
+	</p>
+</body>
+</html>
